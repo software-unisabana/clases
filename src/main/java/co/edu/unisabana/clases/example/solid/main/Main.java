@@ -2,8 +2,6 @@ package co.edu.unisabana.clases.example.solid.main;
 
 import co.edu.unisabana.clases.example.solid.modelo.Estudiante;
 import co.edu.unisabana.clases.example.solid.service.EnvioMaterial;
-import modelo.Estudiante;
-import service.EnvioMaterial;
 
 public class Main {
     public static void main(String[] args) {
