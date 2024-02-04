@@ -9,9 +9,12 @@ public class Estudiante {
         this.nombre = nombre;
         this.carrera = carrera;
     }
-
-    void guardarEstudiante() {
+    /*
+    * viola el Single resposilbility principle por lo que una clase deberia estar solo cumpliendo un funcion entonces pusimos el metodo en otra clase
+    *
+    *   void guardarEstudiante() {
         System.out.println("Guardando estudiante en base de datos");
     }
+ */
 
 }
