@@ -1,6 +1,6 @@
 package co.edu.unisabana.clases.example.solid.modelo;
 
-public class Estudiante {
+public abstract class Estudiante {
 
     public String nombre;
     public String carrera;
@@ -9,6 +9,8 @@ public class Estudiante {
         this.nombre = nombre;
         this.carrera = carrera;
     }
+
+    public abstract String devolverMaterias();
 
     void guardarEstudiante() {
         System.out.println("Guardando estudiante en base de datos");
