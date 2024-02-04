@@ -33,10 +33,6 @@ public class EnvioMaterialinfo {
   *
   * */
 
-
-
-
-
   public void enviarMaterialEstudianteinfo(Estudiante estudiante) {
     if (estudiante.carrera.equals("Informatica")) {
       Envio envio = new Envio();
