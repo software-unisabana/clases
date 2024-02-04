@@ -4,8 +4,21 @@ import java.util.List;
 
 public class Envio {
 
-  public List<String> material;
-  public String saludoDirector;
+  private List<String> material;
+
+  /*
+  Los atributos material y saludoDirector ahora son privados
+   */
+
+  public void setSaludoDirector(String saludoDirector) {
+    this.saludoDirector = saludoDirector;
+  }
+
+  public void setMaterial(List<String> material) {
+    this.material = material;
+  }
+
+  private String saludoDirector;
 
   @Override
   public String toString() {

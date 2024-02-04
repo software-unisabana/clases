@@ -1,19 +1,22 @@
 package co.edu.unisabana.clases.example.solid.modelo;
 
+import java.util.ArrayList;
+
 public abstract class Estudiante {
 
-    public String nombre;
-    public String carrera;
+    String nombre;
+    String carrera;
 
-    public Estudiante(String nombre, String carrera) {
-        this.nombre = nombre;
-        this.carrera = carrera;
-    }
+
 
     public abstract String devolverMaterias();
 
-    void guardarEstudiante() {
-        System.out.println("Guardando estudiante en base de datos");
-    }
+    public abstract ArrayList<String> devolverMateriales();
+
+    public abstract String saludoDirector();
+
+    /*
+    Se borro el metodo guardarEstudiante debido a que no es utilizado
+     */
 
 }
