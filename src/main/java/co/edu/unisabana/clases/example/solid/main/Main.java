@@ -1,12 +1,13 @@
 package co.edu.unisabana.clases.example.solid.main;
 
-import co.edu.unisabana.clases.example.solid.modelo.Administrador;
-import co.edu.unisabana.clases.example.solid.modelo.Estudiante;
-import co.edu.unisabana.clases.example.solid.modelo.Industrial;
-import co.edu.unisabana.clases.example.solid.modelo.Informatico;
+import co.edu.unisabana.clases.example.solid.modelo.*;
+import co.edu.unisabana.clases.example.solid.service.EmailOutlook;
 import co.edu.unisabana.clases.example.solid.service.EnvioMaterial;
 
 public class Main {
+    static Envio envio = new Envio();
+    static EmailOutlook email = new EmailOutlook();
+    static EnvioMaterial material = new EnvioMaterial(envio, email);
     public static void main(String[] args) {
         Estudiante[] listadoEstudiantes = {
                 new Informatico("Daniel"),
@@ -19,7 +20,6 @@ public class Main {
                  */
         };
         verMateriasEstudiantes(listadoEstudiantes);
-        EnvioMaterial material = new EnvioMaterial();
         material.enviarMaterialEstudiante(new Informatico("Daniel"));
     }
 

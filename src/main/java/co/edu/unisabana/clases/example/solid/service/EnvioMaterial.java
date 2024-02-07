@@ -4,13 +4,19 @@ import co.edu.unisabana.clases.example.solid.modelo.Envio;
 import co.edu.unisabana.clases.example.solid.modelo.Estudiante;
 
 public class EnvioMaterial {
+  private final Envio envio;
+  private final EmailOutlook email;
+
+
+  public EnvioMaterial(Envio envio, EmailOutlook email){
+    this.envio=envio;
+    this.email=email;
+  }
 
   public void enviarMaterialEstudiante(Estudiante estudiante) {
-    Envio envio =new Envio();
     envio.setMaterial(estudiante.devolverMateriales());
     envio.setSaludoDirector(estudiante.saludoDirector());
 
-    EmailOutlook email = new EmailOutlook();
     email.enviarEmail(envio);
 
     /*
