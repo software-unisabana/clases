@@ -6,7 +6,6 @@ import co.edu.unisabana.clases.example.patron.comportamiento.coin.Manejador100;
 import co.edu.unisabana.clases.example.patron.comportamiento.coin.Manejador200;
 import co.edu.unisabana.clases.example.patron.comportamiento.coin.Manejador500;
 import co.edu.unisabana.clases.example.patron.comportamiento.coin.Moneda;
-import co.edu.unisabana.clases.example.patron.comportamiento.state.EstadoRecogiendo;
 import co.edu.unisabana.clases.example.patron.comportamiento.state.PeddidoRappo;
 import java.util.ArrayList;
 import java.util.List;
